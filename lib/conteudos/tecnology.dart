@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:url_launcher/link.dart';
 
@@ -24,12 +26,14 @@ class TecnologyPage extends StatelessWidget {
             SizedBox(
               width: 325, // Largura fixa para os botões
               height: 50, // Altura fixa para os botões
-              child: ElevatedButton(
-                onPressed: () {
-                  // Ação do botão Cidadania Digital
-                },
-                child: Image.asset('assets/images/youtube-icon.png'),
+              child: Link(
+                target: LinkTarget.self,
+                uri: Uri.parse('https://youtu.be/32s11sj2q1o'),
+                builder: (context, followLink) => ElevatedButton(
+                  onPressed: followLink,
+                  child: Image.asset('assets/images/youtube-icon.png'),
               ),
+            ),
             ),
             SizedBox(height: 10), // Espaço entre os botões
             SizedBox(
