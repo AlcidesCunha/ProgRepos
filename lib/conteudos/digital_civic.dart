@@ -1,20 +1,19 @@
 import 'package:flutter/material.dart';
-import 'conteudos/abstraction.dart';
-import 'conteudos/automation.dart';
+import 'package:url_launcher/link.dart';
 
-class ComputionalThinkingPage extends StatelessWidget {
+class DigitalCivic extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Pensamento Computacional'),
+        title: Text('Conteúdo Sugerido'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'Que tal ler esses assuntos antes de começar o quiz?',
+              'Você pode ver vídeos ou ler os artigos indicados abaixo para reforçar seu conhecimento:',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 18, // Tamanho da fonte
@@ -27,41 +26,30 @@ class ComputionalThinkingPage extends StatelessWidget {
               height: 50, // Altura fixa para os botões
               child: ElevatedButton(
                 onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => AbstractPage()),
-                    );
+                  // Ação do botão Cidadania Digital
                 },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.pink, // Cor de fundo
-                  foregroundColor: Colors.white, // Cor do texto
-                  textStyle: TextStyle(
-                    fontSize: 18, // Tamanho da fonte dos botões
-                  ),
-                ),
-                child: Text('Abstração'),
+                child: Image.asset('assets/images/youtube-icon.png'),
               ),
             ),
             SizedBox(height: 10), // Espaço entre os botões
             SizedBox(
               width: 325, // Largura fixa para os botões
               height: 50, // Altura fixa para os botões
-              child: ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => AutomationPage()),
-                    );
-                },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.pink, // Cor de fundo
-                  foregroundColor: Colors.white, // Cor do texto
-                  textStyle: TextStyle(
-                    fontSize: 18, // Tamanho da fonte dos botões
+              child: Link(
+                target: LinkTarget.self,
+                uri: Uri.parse('https://medium.com/@gabrielsantana765/o-que-é-abstração-em-programação-bf8ac2fcd96f'),
+                builder: (context, followLink) => ElevatedButton(
+                  onPressed: followLink,
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.pink, // Cor de fundo
+                    foregroundColor: Colors.white, // Cor do texto
+                    textStyle: TextStyle(
+                      fontSize: 18, // Tamanho da fonte dos botões
+                    ),
                   ),
-                ),
-                child: Text('Automação de Processos'),
+                  child: Text('Artigo do Medium'),
               ),
+            ),
             ),
             SizedBox(height: 10), // Espaço entre os botões
             SizedBox(

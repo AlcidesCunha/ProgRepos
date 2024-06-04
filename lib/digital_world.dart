@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'conteudos/codification.dart';
+import 'conteudos/data_process.dart';
 
 class DigitalWorldPage extends StatelessWidget {
   @override
@@ -25,7 +27,10 @@ class DigitalWorldPage extends StatelessWidget {
               height: 50, // Altura fixa para os botões
               child: ElevatedButton(
                 onPressed: () {
-                  // Ação do botão Processamento de Dados
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => DataProcessPage()),
+                    );
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.pink, // Cor de fundo
@@ -43,7 +48,10 @@ class DigitalWorldPage extends StatelessWidget {
               height: 50, // Altura fixa para os botões
               child: ElevatedButton(
                 onPressed: () {
-                  // Ação do botão Codificação
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => CodificationPage()),
+                    );
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.pink, // Cor de fundo

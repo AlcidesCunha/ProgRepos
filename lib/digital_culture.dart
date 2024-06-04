@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'conteudos/digital_civic.dart';
+import 'conteudos/tecnology.dart';
 
 class DigitalCulturePage extends StatelessWidget {
   @override
@@ -25,7 +27,10 @@ class DigitalCulturePage extends StatelessWidget {
               height: 50, // Altura fixa para os botões
               child: ElevatedButton(
                 onPressed: () {
-                  // Ação do botão Cidadania Digital
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => DigitalCivic()),
+                    );
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.pink, // Cor de fundo
@@ -43,7 +48,10 @@ class DigitalCulturePage extends StatelessWidget {
               height: 50, // Altura fixa para os botões
               child: ElevatedButton(
                 onPressed: () {
-                  // Ação do botão Tecnologia e Sociedade
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => TecnologyPage()),
+                    );
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.pink, // Cor de fundo
