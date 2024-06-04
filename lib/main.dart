@@ -1,6 +1,7 @@
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import './leveling.dart';
 
 void main() {
   runApp(MyApp());
@@ -28,8 +29,19 @@ class MyApp extends StatelessWidget {
 class MyAppState extends ChangeNotifier {
   var current = WordPair.random();
 
+  var favorites = <WordPair>[];
+
   void getNext() {
     current = WordPair.random();
+    notifyListeners();
+  }
+
+  void toggleFavorite() {
+    if (favorites.contains(current)) {
+      favorites.remove(current);
+    } else {
+      favorites.add(current);
+    }
     notifyListeners();
   }
 }
@@ -45,17 +57,35 @@ class MyHomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // Text(appState.current.asLowerCase),
             MainTitle(),
             SizedBox(height: 10),
-            BigCard(pair: pair),
+            // BigCard(pair: pair),
             SizedBox(height: 10),
-            ElevatedButton(
-              onPressed: () {
-                print('button pressed!');
-                appState.getNext();
-              },
-              child: Text('Bora começar?'),
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+              SizedBox(
+              width: 250, // Largura fixa para os botões
+              height: 60, // Altura fixa para os botões
+              child: 
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SecondPage()),
+                    );
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.blue, // Cor de fundo
+                    foregroundColor: Colors.yellow, // Cor do texto
+                    textStyle: TextStyle(
+                      fontSize: 20, // Tamanho da fonte
+                    ),
+                  ),
+                  child: Text('Bora começar?'),
+                ),
+            )
+              ],
             ),
           ],
         ),
@@ -64,16 +94,31 @@ class MyHomePage extends StatelessWidget {
   }
 }
 
+
+
 class MainTitle extends StatelessWidget {
-  const MainTitle({
-    super.key,
-  });
+  const MainTitle({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Card(child: Text('Olá, a função desse aplicativo é lhe ajudar com conceitos computacionais!'));
+    return Center(
+      child: Container(
+        color: Colors.white, // Define a cor de fundo como branco
+        padding: const EdgeInsets.all(16.0), // Adiciona padding ao redor do texto
+        child: Text(
+          'Olá, a função desse aplicativo é lhe ajudar com conceitos computacionais!',
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontSize: 24,
+            color: Colors.deepPurpleAccent,
+          ),
+        ),
+      ),
+    );
   }
 }
+
+
 class BigCard extends StatelessWidget {
   const BigCard({
     super.key,
