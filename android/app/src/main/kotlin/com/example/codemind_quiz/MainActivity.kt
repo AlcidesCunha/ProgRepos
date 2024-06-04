@@ -1,4 +1,4 @@
-package com.example.codemind_quiz
+package com.quiz.codemind_quiz
 
 import io.flutter.embedding.android.FlutterActivity
 
