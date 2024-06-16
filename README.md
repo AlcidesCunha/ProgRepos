@@ -12,4 +12,4 @@ Logo Simplificada do Projeto:
 ![Imagem Logo Pequena](https://drive.google.com/file/d/1WAZ5sF2gNb8nPndmZdEzdbsrB0zkSL41/view?usp=drive_link)
 
 Logo detalhada do Projeto:
-![Logo detalhada do projeto](https://drive.google.com/file/d/18SPE5DRzyPogQCa5XwsHObojeMYpEXVP/view?usp=sharing)
+![Logo detalhada do projeto](https://drive.google.com/uc?export=view&id=1WAZ5sF2gNb8nPndmZdEzdbsrB0zkSL41)
