@@ -6,3 +6,10 @@ O CodeMind Quiz é uma plataforma interativa de questionários projetada para en
 
 # Objetivo:
 O objetivo principal do CodeMind Quiz é ajudar os usuários a expandir seus conhecimentos e compreensão em pensamento computacional, mundo digital e cultura digital. Ao fornecer questionários desafiadores e feedback personalizado, o aplicativo visa criar uma experiência educativa envolvente e eficaz, promovendo a aprendizagem ativa e contínua dos usuários no campo da computação.
+
+Logo Simplificada do Projeto:
+
+![Imagem Logo Pequena](https://drive.google.com/file/d/1WAZ5sF2gNb8nPndmZdEzdbsrB0zkSL41/view?usp=drive_link)
+
+Logo detalhada do Projeto:
+![Logo detalhada do projeto](https://drive.google.com/file/d/18SPE5DRzyPogQCa5XwsHObojeMYpEXVP/view?usp=sharing)
