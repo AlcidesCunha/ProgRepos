@@ -9,7 +9,7 @@ O objetivo principal do CodeMind Quiz é ajudar os usuários a expandir seus con
 
 Logo Simplificada do Projeto:
 
-![Imagem Logo Pequena](https://drive.google.com/file/d/1WAZ5sF2gNb8nPndmZdEzdbsrB0zkSL41/view?usp=drive_link)
+![Imagem Logo Pequena](https://drive.google.com/uc?export=view&id=18SPE5DRzyPogQCa5XwsHObojeMYpEXVP)
 
 Logo detalhada do Projeto:
 ![Logo detalhada do projeto](https://drive.google.com/uc?export=view&id=1WAZ5sF2gNb8nPndmZdEzdbsrB0zkSL41)
