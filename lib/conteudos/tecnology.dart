@@ -41,7 +41,7 @@ class TecnologyPage extends StatelessWidget {
               height: 50, // Altura fixa para os botões
               child: Link(
                 target: LinkTarget.self,
-                uri: Uri.parse('https://medium.com/@gabrielsantana765/o-que-é-abstração-em-programação-bf8ac2fcd96f'),
+                uri: Uri.parse('https://medium.com/rd-shipit/tecnologia-e-sociedade-quem-salvará-quem-5e9165d17703'),
                 builder: (context, followLink) => ElevatedButton(
                   onPressed: followLink,
                   style: ElevatedButton.styleFrom(

@@ -37,7 +37,7 @@ class AutomationPage extends StatelessWidget {
               height: 50, // Altura fixa para os botões
               child: Link(
                 target: LinkTarget.self,
-                uri: Uri.parse('https://medium.com/@gabrielsantana765/o-que-é-abstração-em-programação-bf8ac2fcd96f'),
+                uri: Uri.parse('https://medium.com/@rcredesdecomputadores3sem/automação-de-processos-f0aa3b11b938'),
                 builder: (context, followLink) => ElevatedButton(
                   onPressed: followLink,
                   style: ElevatedButton.styleFrom(

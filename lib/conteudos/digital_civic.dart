@@ -37,7 +37,7 @@ class DigitalCivic extends StatelessWidget {
               height: 50, // Altura fixa para os botões
               child: Link(
                 target: LinkTarget.self,
-                uri: Uri.parse('https://medium.com/@gabrielsantana765/o-que-é-abstração-em-programação-bf8ac2fcd96f'),
+                uri: Uri.parse('https://medium.com/@mariochs/sobre-educação-midiática-cidadania-digital-e-direitos-humanos-7422a47f3b73'),
                 builder: (context, followLink) => ElevatedButton(
                   onPressed: followLink,
                   style: ElevatedButton.styleFrom(

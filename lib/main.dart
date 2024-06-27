@@ -59,32 +59,38 @@ class MyHomePage extends StatelessWidget {
           children: [
             MainTitle(),
             SizedBox(height: 10),
+            // Adicione a imagem aqui
+            Image.asset(
+              'assets/images/logo-app.png',
+              width: 250, // Largura da imagem
+              height: 250, // Altura da imagem
+            ),
+            SizedBox(height: 10),
             // BigCard(pair: pair),
             SizedBox(height: 10),
             Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-              SizedBox(
-              width: 250, // Largura fixa para os botões
-              height: 60, // Altura fixa para os botões
-              child: 
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => SecondPage()),
-                    );
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue, // Cor de fundo
-                    foregroundColor: Colors.yellow, // Cor do texto
-                    textStyle: TextStyle(
-                      fontSize: 20, // Tamanho da fonte
+                SizedBox(
+                  width: 250, // Largura fixa para os botões
+                  height: 60, // Altura fixa para os botões
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => SecondPage()),
+                      );
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.blue, // Cor de fundo
+                      foregroundColor: Colors.yellow, // Cor do texto
+                      textStyle: TextStyle(
+                        fontSize: 20, // Tamanho da fonte
+                      ),
                     ),
+                    child: Text('Bora começar?'),
                   ),
-                  child: Text('Bora começar?'),
                 ),
-            )
               ],
             ),
           ],
@@ -93,8 +99,6 @@ class MyHomePage extends StatelessWidget {
     );
   }
 }
-
-
 
 class MainTitle extends StatelessWidget {
   const MainTitle({super.key});
@@ -117,7 +121,6 @@ class MainTitle extends StatelessWidget {
     );
   }
 }
-
 
 class BigCard extends StatelessWidget {
   const BigCard({
