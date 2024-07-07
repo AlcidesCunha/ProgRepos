@@ -28,7 +28,7 @@ class TecnologyPage extends StatelessWidget {
               height: 50, // Altura fixa para os botões
               child: Link(
                 target: LinkTarget.self,
-                uri: Uri.parse('https://youtu.be/32s11sj2q1o'),
+                uri: Uri.parse('https://abrir.link/pmyPc'),
                 builder: (context, followLink) => ElevatedButton(
                   onPressed: followLink,
                   child: Image.asset('assets/images/youtube-icon.png'),
